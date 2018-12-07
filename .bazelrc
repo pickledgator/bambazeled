@@ -1,0 +1,5 @@
+build --verbose_failures
+build --cxxopt=--std=c++14
+# enable gcc colors
+build --copt=-fdiagnostics-color=always
+test --test_output=errors
