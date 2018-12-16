@@ -33,19 +33,23 @@ http_archive(
     strip_prefix = "Catch2-2.5.0",
 )
 
+# =================================
+# Python Dependencies
+# =================================
+
 # Python and its dependencies
-#git_repository(
-#    name = "io_bazel_rules_python",
-#    remote = "https://github.com/bazelbuild/rules_python.git",
-#    commit = "f3a6a8d00a51a1f0e6d61bc7065c19fea2b3dd7a", # Nov 27, 2018
-#)
+git_repository(
+    name = "io_bazel_rules_python",
+    remote = "https://github.com/bazelbuild/rules_python.git",
+    commit = "f3a6a8d00a51a1f0e6d61bc7065c19fea2b3dd7a", # Nov 27, 2018
+)
 
-#load("@io_bazel_rules_python//python:pip.bzl", "pip_repositories", "pip_import")
-#pip_repositories()
-#pip_import(
-#    name = "pip_requirements",
-#    requirements = "//:requirements.txt",
-#)
+load("@io_bazel_rules_python//python:pip.bzl", "pip_repositories", "pip_import")
+pip_repositories()
+pip_import(
+    name = "pip_requirements",
+    requirements = "//:requirements.txt",
+)
 
-#load("@pip_requirements//:requirements.bzl", "pip_install")
-#pip_install()
+load("@pip_requirements//:requirements.bzl", "pip_install")
+pip_install()
