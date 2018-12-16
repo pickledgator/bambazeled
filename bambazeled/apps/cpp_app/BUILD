@@ -3,6 +3,7 @@ cc_binary(
     srcs = ["main.cpp"],
     deps = [
       "//bambazeled/modules/cpp_lib:cpp_lib",
-      "@cxxopts//:cxxopts"
+      "@cxxopts//:cxxopts",
+      "@spdlog//:spdlog",
     ],
 )

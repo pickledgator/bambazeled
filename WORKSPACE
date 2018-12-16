@@ -1,5 +1,11 @@
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
+# To generate sha256 hash, use: "shasum -a 256 filename.tar.gz"
+
+# =================================
+# C++ Dependencies
+# =================================
+
 # Cxxopts
 http_archive(
     name = "cxxopts",
@@ -9,11 +15,21 @@ http_archive(
     strip_prefix = "cxxopts-2.1.1",
 )
 
+# Spdlog for logging
+http_archive(
+    name = "spdlog",
+    build_file = "//:third_party/spdlog.BUILD",
+    url = "https://github.com/gabime/spdlog/archive/v1.2.1.tar.gz",
+    sha256 = "867a4b7cedf9805e6f76d3ca41889679054f7e5a3b67722fe6d0eae41852a767",
+    strip_prefix = "spdlog-1.2.1",
+)
+
 # Catch for unit testing
 http_archive(
     name = "catch",
     build_file = "//:third_party/catch.BUILD",
     url = "https://github.com/catchorg/Catch2/archive/v2.5.0.tar.gz",
+    sha256 = "720c84d18f4dc9eb23379941df2054e7bcd5ff9c215e4d620f8533a130d128ae",
     strip_prefix = "Catch2-2.5.0",
 )
 
