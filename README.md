@@ -9,11 +9,12 @@ This project explores:
 * Several external libraries that could be used to develop a platform
 
 # Prerequisites
-## Bazel
-Requires bazel version `v0.19.2`.
-Install using the instructions found [here](https://docs.bazel.build/versions/master/install.html).
+**Bazel**
+Requires specifically version `v0.19.2` (see notes below)
+Install using the instructions found [here](https://docs.bazel.build/versions/master/install.html)
 
-## Docker
+**Docker**
+Install for your host platform using relevant [instructions](https://www.docker.com/get-started)
 
 ## Included Dependencies
 ## C++
