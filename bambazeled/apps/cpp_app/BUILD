@@ -6,4 +6,5 @@ cc_binary(
       "@cxxopts//:cxxopts",
       "@spdlog//:spdlog",
     ],
+    visibility = ["//visibility:public"],
 )
