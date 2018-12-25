@@ -14,21 +14,21 @@ This project explores:
 **Docker**: Install for your host platform using relevant [instructions](https://www.docker.com/get-started).
 
 ## Included Dependencies
-## C++
+### C++
 * Catch2 - Unit testing framework
 * Spdlog - Logging framework
 * Cxxopts - Lightweight program options
 
-## Python
+### Python
 * Click - Lightweight program options
 * Unittest (built-in) - Unit testing framework
 * Logging (built-in) - Logging framework
 
-# Docker Base Images
+## Docker Base Images
 * Building locally
 To build the docker base images locally, use `docker build -f Dockerfile.xxx .`
-
 * Deploying base images to Docker Hub
+TBD
 
 ## Notes
 **Pytest** doesn't play well with bazel. Here's a [thread](https://groups.google.com/forum/#!topic/bazel-discuss/d1RKUmyve_Q) on why.
@@ -36,13 +36,13 @@ To build the docker base images locally, use `docker build -f Dockerfile.xxx .`
 There are active [issues](https://github.com/tensorflow/tensorflow/issues/24124) with toolchains in `v0.20.0` and `v0.21.0`.
 
 ## References
-https://github.com/tensorflow/tensorflow
-https://github.com/envoyproxy/envoy
-https://blog.bazel.build/2015/07/28/docker_build.html
-https://github.com/jemdiggity/rules_os_dependent_http_archive
+* https://github.com/tensorflow/tensorflow
+* https://github.com/envoyproxy/envoy
+* https://blog.bazel.build/2015/07/28/docker_build.html
+* https://github.com/jemdiggity/rules_os_dependent_http_archive
 
-https://github.com/xifengcun/tensorflow-aarch64-crossbuild
-https://github.com/hwright/hello-bazel-docker
+* https://github.com/xifengcun/tensorflow-aarch64-crossbuild
+* https://github.com/hwright/hello-bazel-docker
 
 ## Troubleshooting
 ```
