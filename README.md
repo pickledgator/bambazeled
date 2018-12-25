@@ -8,13 +8,10 @@ This project explores:
 * Support for pre-built libraries that are a pain in the ass to bazelify (via `rules_foreign_cc`)
 * Several external libraries that could be used to develop a platform
 
-# Prerequisites
-**Bazel**
-Requires specifically version `v0.19.2` (see notes below)
-Install using the instructions found [here](https://docs.bazel.build/versions/master/install.html)
+## Prerequisites
+**Bazel**: Requires specifically version `v0.19.2` (see notes below). Install using the instructions found [here](https://docs.bazel.build/versions/master/install.html).
 
-**Docker**
-Install for your host platform using relevant [instructions](https://www.docker.com/get-started)
+**Docker**: Install for your host platform using relevant [instructions](https://www.docker.com/get-started).
 
 ## Included Dependencies
 ## C++
@@ -33,7 +30,7 @@ To build the docker base images locally, use `docker build -f Dockerfile.xxx .`
 
 * Deploying base images to Docker Hub
 
-# Notes
+## Notes
 **Pytest** doesn't play well with bazel. Here's a [thread](https://groups.google.com/forum/#!topic/bazel-discuss/d1RKUmyve_Q) on why.
 
 There are active [issues](https://github.com/tensorflow/tensorflow/issues/24124) with toolchains in `v0.20.0` and `v0.21.0`.
